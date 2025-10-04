@@ -60,19 +60,126 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>NinjaCat Token</title>
+  <title>NinjaCat Token (NCAT)</title>
+  <style>
+    /* Background Animation */
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background: linear-gradient(-45deg, #0f0f0f, #1a1a40, #2c003e, #000);
+      background-size: 400% 400%;
+      animation: gradientBG 12s ease infinite;
+      color: #fff;
+      text-align: center;
+    }
+    @keyframes gradientBG {
+      0% { background-position: 0% 50%; }
+      50% { background-position: 100% 50%; }
+      100% { background-position: 0% 50%; }
+    }
+
+    /* Header */
+    header {
+      padding: 40px 20px;
+    }
+    h1 {
+      font-size: 2.8em;
+      color: #ffcc00;
+      text-shadow: 0 0 10px #ffcc00, 0 0 20px #ff6600;
+    }
+    p {
+      font-size: 1.2em;
+      color: #ddd;
+    }
+
+    /* Tokenomics Card */
+    .card {
+      max-width: 600px;
+      margin: 30px auto;
+      padding: 25px;
+      border-radius: 15px;
+      background: rgba(255, 255, 255, 0.08);
+      backdrop-filter: blur(10px);
+      box-shadow: 0 8px 20px rgba(0,0,0,0.4);
+    }
+    .card h2 {
+      color: #00e6e6;
+      margin-bottom: 20px;
+      text-shadow: 0 0 8px #00e6e6;
+    }
+    table {
+      width: 100%;
+      border-collapse: collapse;
+    }
+    td {
+      padding: 12px;
+      border-bottom: 1px solid rgba(255,255,255,0.2);
+      font-size: 1.1em;
+    }
+    td:first-child {
+      text-align: left;
+      color: #ffcc00;
+    }
+    td:last-child {
+      text-align: right;
+      color: #fff;
+    }
+
+    /* Button */
+    .btn {
+      display: inline-block;
+      margin-top: 20px;
+      padding: 12px 25px;
+      font-size: 1.1em;
+      font-weight: bold;
+      color: #000;
+      background: #ffcc00;
+      border-radius: 30px;
+      text-decoration: none;
+      transition: 0.3s;
+    }
+    .btn:hover {
+      background: #ffaa00;
+      box-shadow: 0 0 15px #ffcc00;
+    }
+
+    /* Footer */
+    footer {
+      margin-top: 40px;
+      padding: 15px;
+      font-size: 0.9em;
+      color: #aaa;
+      background: rgba(0,0,0,0.4);
+    }
+  </style>
 </head>
 <body>
-  <h1>Welcome to NinjaCat Token (NCAT)</h1>
-  <p>A stealthy cat-themed meme token for fun, creativity, and community.</p>
 
-  <h2>Tokenomics</h2>
-  <ul>
-    <li>Total Supply: 1,000,000,000 NCAT</li>
-    <li>50% Liquidity (locked)</li>
-    <li>20% Community Airdrops</li>
-    <li>15% Team (vested)</li>
-    <li>10% Marketing & Partnerships</li>
+  <header>
+    <h1>🐱 NinjaCat Token (NCAT)</h1>
+    <p>A stealthy cat-themed meme token for fun, creativity, and community.</p>
+  </header>
+
+  <div class="card">
+    <h2>📊 Tokenomics</h2>
+    <table>
+      <tr><td>Total Supply</td><td>1,000,000,000 NCAT</td></tr>
+      <tr><td>Liquidity</td><td>50% (Locked)</td></tr>
+      <tr><td>Community Airdrops</td><td>20%</td></tr>
+      <tr><td>Team</td><td>15% (Vested)</td></tr>
+      <tr><td>Marketing & Partnerships</td><td>10%</td></tr>
+      <tr><td>Treasury</td><td>5%</td></tr>
+    </table>
+    <a href="#" class="btn">🚀 Buy Now</a>
+  </div>
+
+  <footer>
+    © 2025 NinjaCat Token. All Rights Reserved.
+  </footer>
+
+</body>
+</html>
+
     <li>5% Treasury</li>
   </ul>
 
